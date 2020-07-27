@@ -37,15 +37,8 @@
     ],
     "permissions": [
         "notifications",
-        "tabs",
         "idle",
-        "webNavigation",
-        "webRequest", "webRequestBlocking",
         "unlimitedStorage",
-        "storage",
-        "contextMenus",
-        "clipboardWrite",
-        "cookies",
-        "downloads"
+        "storage"
     ]
   }

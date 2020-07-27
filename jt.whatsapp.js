@@ -3,18 +3,19 @@ setTimeout(() => {
 }, 100);
 
 function init(){
-    var ct = get_current_theme();
+    var ct = localStorage.theme;
     var dg = "darkgreen";
     if(ct == '"' + dg + '"'){
         document.querySelector('body').classList.add(dg);
         if(document.querySelector('body').classList.contains("dark")){
             document.querySelector('body').classList.remove('dark');
         }
-    }else{
-        //alert(ct + " != " + dg);
     }
     if(localStorage.jt_privacy == "enabled"){
         document.querySelector('body').classList.add("jt-privacy");
+    }
+    if(localStorage.jt_background != null || localStorage.jt_background == ""){
+        localStorage.jt_background = "0";
     }
     setTimeout(() => {
         add_theme_config();
@@ -24,11 +25,6 @@ function init(){
         add_config_script();
     }, 4000);
 }
-
-function get_current_theme(){
-    return localStorage.theme;
-}
-
 
 function add_theme_config(){
     var jt_theme_btn = document.createElement('div');
@@ -43,7 +39,7 @@ function add_theme_list(){
     var jt_theme_listing = document.createElement('div');
     jt_theme_listing.classList.add("jt-theme-list");
     jt_theme_listing.classList.add("hide");
-    jt_theme_listing.innerHTML = '<div class="jt-modal"><div class="jt-modal-header"><h4>Usa WhatsApp con tu estilo favorito.</h4><span onclick="hideThemes()">X</span></div><div class="jt-modal-body"><p><a onclick="setTheme(\'1\')">Light</a> (Default)</p><br/><p><a onclick="setTheme(\'2\')">Dark</a> (By WhatsApp Team)</p><br/><p><a onclick="setTheme(\'3\')">DarkGreen</a> (By @JaviertINC)</p><br/><p><a onclick="setTheme(\'4\')">DarkRed</a> (By @YarleyINC)</p></div></div></div></div>';
+    jt_theme_listing.innerHTML = '<div class="jt-modal"><div class="jt-modal-header"><h4>Usa WhatsApp con tu estilo favorito.</h4><span onclick="hideThemes()">X</span></div><div class="jt-modal-body"><p><a onclick="setTheme(\'1\')">Light</a> (Default)</p><br/><p><a onclick="setTheme(\'2\')">Dark</a> (By WhatsApp Team)</p><br/><p><a onclick="setTheme(\'3\')">DarkGreen</a> (By @JaviertINC)</p></div></div></div></div>';
     document.body.appendChild(jt_theme_listing);
 }
 function add_background_config(){
@@ -112,9 +108,40 @@ function add_config_script(){
         '   hideThemes();',
         '}',
         'function background_config(){',
-        '   var c_bg = prompt(\'Ingresa el enlace de tu imagen de fondo\\nIngresa 0 si quieres restaurar el fondo por defecto.\\n\', "3");',
+        '   var c_bg = prompt(\'Ingresa el enlace de tu imagen de fondo\\nIngresa 0 si quieres restaurar el fondo por defecto.\\n\', localStorage.jt_background);',
         '   if (c_bg != null || c_bg != "") {',
-        '     alert(c_bg);',
+        '       set_background_image(c_bg)',
+        '   }',
+        '}',
+        'function set_background_image(url){',            
+        '   var theme = localStorage.theme;',
+        '   theme = theme.replace("\\"", "");',
+        '   theme = theme.replace("\\"", "");',
+        '   if(url == null || url == "" || url == "0"){',
+        '       if(url == "0"){',
+        '           switch(theme){',
+        '               case "light":',
+        '                   document.querySelector("[data-asset-chat-background-"+ theme +"]").setAttribute("style", "background: url(\'https://javiertinc.github.io/jtWhatsApp/images/bg-chat-tile-light.png\')!important;");',
+        '               break;',
+        '               case "dark":',
+        '                   document.querySelector("[data-asset-chat-background-"+ theme +"]").setAttribute("style", "background: url(\'https://javiertinc.github.io/jtWhatsApp/images/bg-chat-tile-dark.png\')!important;");',
+        '               break;',
+        '               case "darkgreen":',
+        '                   document.querySelector("[data-asset-chat-background-"+ theme +"]").setAttribute("style", "background: url(\'https://javiertinc.github.io/jtWhatsApp/images/bg-chat-tile-darkgreen.jpg\')!important;");',
+        '               break;',
+        '           }',
+        '       }else{',
+        '           url = localStorage.jt_background;',
+        '           document.querySelector("[data-asset-chat-background-"+ theme +"]").setAttribute("style", "background: url(\'"+ url +"\')!important; background-size: cover!important;");',
+        '       }',
+        '   }else{',
+        '       if(url.substring(0, 11) == "data:image/"){',
+        '           localStorage.jt_background = url;',
+        '           document.querySelector("[data-asset-chat-background-"+ theme +"]").setAttribute("style", "background: url(\'"+ url +"\')!important; background-size: cover!important;");',
+        '       }else{',
+        '           localStorage.jt_background = url;',
+        '           document.querySelector("[data-asset-chat-background-"+ theme +"]").setAttribute("style", "background: url(\'https://external-content.duckduckgo.com/iu/?f=1&u="+ encodeURIComponent(url) +"\')!important; background-size: cover!important;");',
+        '       }',
         '   }',
         '}',
         'function privacy_config(){',
