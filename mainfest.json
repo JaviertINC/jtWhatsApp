@@ -1,0 +1,21 @@
+{
+    "manifest_version": 1,
+  
+    "name": "jtWhatsApp",
+    "description": "Una versión tal vez mejor para WhatsApp Web",
+    "version": "0.0.1",
+    "homepage_url": "https://javiertinc.cl/extensiones/jtwhatsapp",
+    "icons": {
+        "48": "icons/jtwhatsapp-48.png",
+        "64": "icons/jtwhatsapp-64.png",
+        "512": "icons/jtwhatsapp-512.png"
+    },
+    "content_scripts": [
+      {
+          "matches": ["https://web.whatsapp.com/*"],
+          "css": ["jt.whatsapp.css"],
+          "js": ["jt.whatsapp.js"],
+          "run_at": "document_start"
+      }
+    ]
+  }
