@@ -1,0 +1,150 @@
+/********************************* 
+ *
+ *  Desarrollado por @JaviertINC
+ *      https://javiertinc.cl
+ *
+ ********************************/
+
+.darkgreen {
+    --gray-200: #4caf50;
+    --teal: #4caf50;
+    --app-background-stripe: #4caf50;
+    --intro-background: #4c4c4c;
+    --primary: #fff;
+    --primary-title: #fff;
+    --primary-strong: #f1f1f1;
+    --primary-stronger: #f1f1f1;
+    --secondary: #eee;
+    --secondary-lighter: #e1e1e1;
+    --secondary-stronger: #f1f1f1;
+    --border-stronger: #4caf50;
+    --button-primary-background: #4caf50;
+    --button-secondary: #4caf50;
+    --button-alternative-background: #4caf50;
+    --button-alternative: #fff;
+    --background-default: #393939;
+    --background-default-active: #4c4c4c;
+    --background-default-hover: #4c4c4c;
+    --border-list: #4caf50;
+    --icon: #fff;
+    --icon-lighter: #ddd;
+    --icon-ack: #4caf50;
+    --icon-strong-rgb: 255,255,255
+    --icon-lighter-rgb: 200, 200, 200,.7;
+    --rich-text-panel-background: #4c4c4c;
+    --compose-background: #666;
+    --avatar-background: #242424;
+    --avatar-placeholder-background: #242424;
+    --panel-background: #4c4c4c;
+    --panel-background-deep: #4c4c4c;
+    --panel-background-deeper: #666;
+    --panel-background-lighter: #242424;
+    --panel-background-colored: #4caf50;
+    --panel-background-hover: #333;
+    --panel-header-background: #4c4c4c;
+    --panel-header-icon: #fff;
+    --unread-background: #4caf50;
+    --unread-marker-background: #4caf50;
+    --compose-panel-background: #4c4c4c;
+    --incoming-background: #4c4c4c;
+    --incoming-background-rgb: 76,76,76;
+    --incoming-background-deeper: #333;
+    --incoming-background-deeper-rgb: 51,51,51;
+    --outgoing-background: #4f4f4f;
+    --outgoing-background-deeper: #333;
+    --outgoing-background-deeper-rgb: 51,51,51;
+    --dropdown-background: #393939;
+    --dropdown-background-hover: #4caf50;
+    --conversation-panel-background: #242424;
+    --media-viewer-background-rgb: 51,51,51;
+    --border-panel: #4caf50;
+    --system-message-background: #4c4c4c;
+    --system-message-text: #fff;
+    --conversation-panel-border: #4caf50;
+    --thumb-border-active: #4caf50;
+    --input-border-active: #4caf50;
+    --highlight: #4caf50;
+    --outgoing-background-rgb: 79, 79, 79;
+    --primary-strong-rgb: 170,170,170;
+    --media-viewer-background: #4c4c4c;
+    --modal-backdrop-solid: #242424;
+    --modal-background: #4c4c4c;
+    --notification-biz-background: #4c4c4c;
+    --notification-e2e-background: #4c4c4c;
+    --drawer-section-background: #4c4c4c;
+    --drawer-background: #333;
+    --teal-lighter: #4caf50;
+    --bubble-meta: #aaa;
+    --bubble-meta-icon: #aaa;
+    --button-bubble: #4caf50;
+    --button-secondary-background-hover: #343434;
+    --chatlist-icon: #aaa;
+    --intro-secondary: #f1f1f1;
+    --message-primary: #fff;
+    --compose-primary: #fff;
+    --compose-input-background: #343434;
+    --compose-input-border: #4caf50;
+    --notification-biz-text: #fff;
+    --notification-e2e-text: #fff;
+    --search-input-background: #666;
+    --search-container-background: #4c4c4c;
+    --active-tab-marker: #4caf50;
+    --butterbar-update-background: #4caf50;
+    --spinner-highlight: #4caf50;
+    --modal-backdrop: rgba(0,0,0,.7);
+    --button-plain-background: #4caf50;
+    --panel-input-background: #666;
+}
+body.darkgreen{ background-color: #242424!important; background-image: unset!important;}
+.darkgreen a{ color: #4caf50!important; }
+.darkgreen ._1i1U7.jZ4tp,.darkgreen ._1i1U7._2DNgV{ background: unset!important; }
+.darkgreen #startup{ background-color: #242424!important; }
+.darkgreen #startup._1UDDE{ fill: #4caf50!important; }
+.darkgreen ._1RQfk{ background-color: #393939!important; }
+.darkgreen ._3pkkz{ border-bottom: 1px solid #4caf50!important; border-right: 1px solid #4caf50!important; }
+.darkgreen ._2nmDZ{ border-right: 1px solid #4caf50!important; }
+.darkgreen ._3auIg{ border: 1px solid #4caf50!important; }
+.darkgreen ._2y17h::after{ border: unset!important; background-color: unset!important; }
+.darkgreen ._1-iDe.Wu52Z{ border-right: 1px solid #4caf50!important; }
+.darkgreen ._2y17h,.darkgreen .gQzdc{ border-top: 1px solid #4caf50!important; border-bottom: 1px solid #4caf50!important; }
+.darkgreen _1vDUw B5rWa{ border-left: 1px solid #4caf50!important; }
+.darkgreen [data-asset-intro-image-darkgreen] { background-image: url("https://javiertinc.github.io/images/whatsapp-connection.png") !important; }
+.darkgreen [data-asset-chat-background-darkgreen]{background-image: url("https://i.yesly.cl/lNmTEA4s") !important;}
+.darkgreen .Zq3Mc{ border: 1px solid #4caf50!important; color: #fff!important; }
+.darkgreen .rRAIq[style="background-color: rgb(251, 251, 251);"]{ background-color: #222!important; }
+.darkgreen path[fill="#009588"]{ fill:#4caf50!important; }
+.darkgreen span[data-icon="back-blue"]{ color: #4caf50!important; }
+.darkgreen .B5rWa{ border-left: 1px solid #4caf50!important; border-bottom: 1px solid #4caf50!important; }
+.darkgreen .gQzdc{ border-top: none!important; border-left: 1px solid #4caf50!important; }
+.darkgreen .message-in .tail-container,.darkgreen .message-in .tail-override-right .tail-container, .darkgreen .message-out .tail-override-right .tail-container, .darkgreen .message-in .tail-override-left .tail-container{ background-image: unset!important; }
+.darkgreen .message-out .tail-container,.darkgreen .message-out .tail-container.highlight{ background-image: unset!important; }
+.darkgreen .Pg7Si progress{ background-color: #4c4c4c!important; color: #4caf50!important; }
+.darkgreen .Pg7Si progress[value]::-webkit-progress-value{ background-color: #4caf50!important; }
+.darkgreen ._2EXPL{ filter: unset!important;}
+.darkgreen ._1CnF3{ border: 1px solid #4caf50!important; }
+.darkgreen ._3lLzD{ color: #f1f1f1!important; }
+.darkgreen ._2u2Mg ._1WliW,.darkgreen ._1wCju ._2UkYn,.darkgreen .Qgzj8.gqwaM._3FXB1{ border-radius: 0!important;}
+.darkgreen ._2u2Mg ._1WliW,.darkgreen ._1wCju ._2UkYn{ border: 1px solid #4caf50!important; }
+.darkgreen ._2fq0t{ border: 1px solid #4caf50!important; border-left: 0!important;}
+.darkgreen .app-wrapper-web .h70RQ,.darkgreen ._1E1g0{ border: 1px solid #4caf50!important; }
+.darkgreen .YUoyu{ opacity: 0.18!important; }
+.darkgreen ._9a59P{ color: #fff!important; }
+.darkgreen [data-icon="search"]{ color: #fff!important; }
+.darkgreen ._2vJ01{ border-top: 1px solid #4caf50!important; }
+.darkgreen header{ border-bottom: 1px solid #4caf50!important; }
+.darkgreen .G_MLO{ border: 1px solid #4caf50!important; }
+.darkgreen ._3pTi5{ color: var(--message-primary)!important; }
+.darkgreen ._39vRn{ color: var(--message-primary)!important; }
+.darkgreen .NRCvf{ color: #ccc!important; }
+.darkgreen ._3Whw5.selectable-text.invisible-space.copyable-text{ color: #f1f1f1!important; }
+.darkgreen a._3Whw5.selectable-text.invisible-space.copyable-text{ color: #4caf50!important; }
+.darkgreen .matched-mention._3Whw5 span{ color: #4caf50!important; }
+.darkgreen ._2VOsv._2RAgj._--7_r,.darkgreen ._2VOsv._2RAgj._--7_r:hover{ background-color: #4caf50; color: #fff; }
+.darkgreen ._2VOsv._2RAgj:hover{ background-color: #666; color: #fff; }
+.darkgreen ._2VOsv._2RAgj:hover{ color: #fff; }
+.darkgreen ._1qTcI .wPvaz .tLOLM{ color: #fff; }
+.darkgreen ._1qTcI .wPvaz .tLOLM::placeholder{ color: #ddd; }
+[title="Theme"],[title="Tema"]{ display: none!important; }
+.jt-theme-btn{ background-color: #4c4c4c; color: #fff; border: 1px solid #4caf50; border-right: none; position: fixed; top: 140px; right: 0; padding: 1rem; border-radius: 5px 0 0 5px; cursor: pointer; z-index: 999; }
+.jt-background-btn{ background-color: #4c4c4c; color: #fff; border: 1px solid #4caf50; border-right: none; position: fixed; top: calc(140px + 58px + .5rem); right: 0; padding: 1rem; border-radius: 5px 0 0 5px; cursor: pointer; z-index: 999; }
+.jt-theme-btn,.jt-background-btn:hover{ background-color: #555; }
