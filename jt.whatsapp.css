@@ -5,6 +5,64 @@
  *
  ********************************/
 
+
+ 
+
+.hide{ display: none!important; }
+.jt-theme-list{
+    background-color: rgba(0,0,0,.5);
+    color: var(--primary);
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99999999;
+}
+.jt-theme-list .jt-modal{
+    background-color: var(--intro-background);
+    color: var(--primary);
+    border: 1px solid var(--panel-background-colored);
+    display: block;
+    width: 650px;
+    height: 70%;
+    margin: 1rem auto 0;
+    z-index: 999999999;
+}
+.jt-theme-list .jt-modal .jt-modal-header{
+    border-bottom: 1px solid var(--panel-background-colored);
+    padding: 1rem;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jt-theme-list .jt-modal .jt-modal-header span{
+    cursor: pointer;
+    padding: 0 .5rem;
+}
+.jt-theme-list .jt-modal .jt-modal-body{
+    padding: 1rem;
+}
+.jt-theme-list .jt-modal .jt-modal-body a{
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--primary);
+    padding: .3rem 0;
+    cursor: pointer;
+    display: block;
+}
+.jt-theme-list .jt-modal .jt-modal-body a:hover{
+    color: var(--gray-200);
+    text-decoration: underline;
+}
+
+/* ####################################
+ *
+ *          DarkGreen
+ *
+ * #################################### */
 .darkgreen {
     --gray-200: #4caf50;
     --teal: #4caf50;
@@ -107,10 +165,8 @@ body.darkgreen{ background-color: #242424!important; background-image: unset!imp
 .darkgreen ._2y17h::after{ border: unset!important; background-color: unset!important; }
 .darkgreen ._1-iDe.Wu52Z{ border-right: 1px solid #4caf50!important; }
 .darkgreen ._2y17h,.darkgreen .gQzdc{ border-top: 1px solid #4caf50!important; border-bottom: 1px solid #4caf50!important; }
-.darkgreen _1vDUw B5rWa{ border-left: 1px solid #4caf50!important; }
-.darkgreen [data-asset-intro-image-darkgreen] { background-image: url("https://javiertinc.github.io/images/whatsapp-connection.png") !important; }
-.darkgreen [data-asset-chat-background-darkgreen]{background-image: url("https://i.yesly.cl/lNmTEA4s") !important;}
-.darkgreen .Zq3Mc{ border: 1px solid #4caf50!important; color: #fff!important; }
+.darkgreen ._1vDUw .B5rWa{ border-left: 1px solid #4caf50!important; }
+.darkgreen .Zq3Mc{ border: 1px solid #4caf50!important; color: var(--primary)!important; }
 .darkgreen .rRAIq[style="background-color: rgb(251, 251, 251);"]{ background-color: #222!important; }
 .darkgreen path[fill="#009588"]{ fill:#4caf50!important; }
 .darkgreen span[data-icon="back-blue"]{ color: #4caf50!important; }
@@ -128,8 +184,8 @@ body.darkgreen{ background-color: #242424!important; background-image: unset!imp
 .darkgreen ._2fq0t{ border: 1px solid #4caf50!important; border-left: 0!important;}
 .darkgreen .app-wrapper-web .h70RQ,.darkgreen ._1E1g0{ border: 1px solid #4caf50!important; }
 .darkgreen .YUoyu{ opacity: 0.18!important; }
-.darkgreen ._9a59P{ color: #fff!important; }
-.darkgreen [data-icon="search"]{ color: #fff!important; }
+.darkgreen ._9a59P{ color: var(--primary)!important; }
+.darkgreen [data-icon="search"]{ color: var(--primary)!important; }
 .darkgreen ._2vJ01{ border-top: 1px solid #4caf50!important; }
 .darkgreen header{ border-bottom: 1px solid #4caf50!important; }
 .darkgreen .G_MLO{ border: 1px solid #4caf50!important; }
@@ -139,12 +195,25 @@ body.darkgreen{ background-color: #242424!important; background-image: unset!imp
 .darkgreen ._3Whw5.selectable-text.invisible-space.copyable-text{ color: #f1f1f1!important; }
 .darkgreen a._3Whw5.selectable-text.invisible-space.copyable-text{ color: #4caf50!important; }
 .darkgreen .matched-mention._3Whw5 span{ color: #4caf50!important; }
-.darkgreen ._2VOsv._2RAgj._--7_r,.darkgreen ._2VOsv._2RAgj._--7_r:hover{ background-color: #4caf50; color: #fff; }
-.darkgreen ._2VOsv._2RAgj:hover{ background-color: #666; color: #fff; }
-.darkgreen ._2VOsv._2RAgj:hover{ color: #fff; }
-.darkgreen ._1qTcI .wPvaz .tLOLM{ color: #fff; }
+.darkgreen ._2VOsv._2RAgj._--7_r,.darkgreen ._2VOsv._2RAgj._--7_r:hover{ background-color: #4caf50; color: var(--primary)!important; }
+.darkgreen ._2VOsv._2RAgj:hover{ background-color: #666; color: var(--primary)!important; }
+.darkgreen ._2VOsv._2RAgj:hover{ color: var(--primary)!important; }
+.darkgreen ._1qTcI .wPvaz .tLOLM{ color: var(--primary)!important; }
 .darkgreen ._1qTcI .wPvaz .tLOLM::placeholder{ color: #ddd; }
 [title="Theme"],[title="Tema"]{ display: none!important; }
-.jt-theme-btn{ background-color: #4c4c4c; color: #fff; border: 1px solid #4caf50; border-right: none; position: fixed; top: 140px; right: 0; padding: 1rem; border-radius: 5px 0 0 5px; cursor: pointer; z-index: 999; }
-.jt-background-btn{ background-color: #4c4c4c; color: #fff; border: 1px solid #4caf50; border-right: none; position: fixed; top: calc(140px + 58px + .5rem); right: 0; padding: 1rem; border-radius: 5px 0 0 5px; cursor: pointer; z-index: 999; }
-.jt-theme-btn,.jt-background-btn:hover{ background-color: #555; }
+.jt-theme-btn{ background-color: var(--panel-background); color: var(--primary); border: 1px solid var(--panel-background-colored); border-right: none; position: fixed; top: 140px; right: 0; padding: 1rem; border-radius: 5px 0 0 5px; cursor: pointer; z-index: 999; }
+.jt-background-btn{ background-color: var(--panel-background); color: var(--primary); border: 1px solid var(--panel-background-colored); border-right: none; position: fixed; top: calc(140px + 58px + .5rem); right: 0; padding: 1rem; border-radius: 5px 0 0 5px; cursor: pointer; z-index: 999; }
+.jt-privacy-btn{ background-color: var(--panel-background); color: var(--primary); border: 1px solid var(--panel-background-colored); border-right: none; position: fixed; top: calc(140px + 58px + .5rem + 58px + .5rem); right: 0; padding: 1rem; border-radius: 5px 0 0 5px; cursor: pointer; z-index: 999; }
+.jt-autor-corrector-btn{ background-color: var(--panel-background); color: var(--primary); border: 1px solid var(--panel-background-colored); border-right: none; position: fixed; top: calc(140px + 58px + .5rem + 58px + .5rem + 58px + .5rem); right: 0; padding: 1rem; border-radius: 5px 0 0 5px; cursor: pointer; z-index: 999; }
+.jt-theme-btn:hover,.jt-background-btn:hover,.jt-privacy-btn:hover,.jt-autor-corrector-btn:hover{ background-color: var(--panel-input-background); }
+
+
+[data-asset-intro-image-light] { background-image: url("https://javiertinc.github.io/images/intro-connection-light.jpg"); }
+.dark [data-asset-intro-image-dark] { background-image: url("https://javiertinc.github.io/jtWhatsApp/images/intro-connection-dark.jpg"); }
+.darkgreen [data-asset-intro-image-darkgreen] { background-image: url("https://javiertinc.github.io/images/whatsapp-connection-darkgreen.png"); }
+.darkgreen [data-asset-chat-background-darkgreen]{background-image: url("https://i.yesly.cl/lNmTEA4s");}
+
+
+.jt-privacy ._210SC .eJ0yJ{ transition: all 0.3s; filter: blur(5px)!important; }
+.jt-privacy ._210SC .eJ0yJ._13opk,._210SC:hover .eJ0yJ,.jt-privacy ._210SC:hover,.jt-privacy ._2xoTX,.jt-privacy ._2xoTX:hover{ filter: blur(0px)!important; }
+.jt-privacy ._210SC:hover{ filter: blur(1px)!important; }

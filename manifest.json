@@ -1,15 +1,32 @@
 {
-    "manifest_version": 1,
-  
+    "manifest_version": 2,
+    "applications": {
+      "gecko": {
+          "id": "addons@javiertinc.cl",
+          "strict_min_version": "52.0"
+      }
+    },
+
     "name": "jtWhatsApp",
-    "description": "Una versión tal vez mejor para WhatsApp Web",
+    "description": "Un addon que mejora WhatsApp Web.",
     "version": "0.0.1",
-    "homepage_url": "https://javiertinc.cl/extensiones/jtwhatsapp",
+    "homepage_url": "https://javiertinc.cl/addons/jtwhatsapp",
     "icons": {
         "48": "icons/jtwhatsapp-48.png",
         "64": "icons/jtwhatsapp-64.png",
         "512": "icons/jtwhatsapp-512.png"
     },
+
+    
+    "browser_action": {
+      "default_icon": {
+        "48": "icons/jtwhatsapp-48.png",
+        "64": "icons/jtwhatsapp-64.png",
+        "512": "icons/jtwhatsapp-512.png"
+      },
+      "default_title": "jtWhatsApp"
+    },
+
     "content_scripts": [
       {
           "matches": ["https://web.whatsapp.com/*"],
@@ -17,5 +34,18 @@
           "js": ["jt.whatsapp.js"],
           "run_at": "document_start"
       }
+    ],
+    "permissions": [
+        "notifications",
+        "tabs",
+        "idle",
+        "webNavigation",
+        "webRequest", "webRequestBlocking",
+        "unlimitedStorage",
+        "storage",
+        "contextMenus",
+        "clipboardWrite",
+        "cookies",
+        "downloads"
     ]
   }
